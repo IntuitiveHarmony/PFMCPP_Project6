@@ -87,12 +87,12 @@ struct U
             this->name1 = *updatedValue;
             std::cout << "U's name1 updated value: " << this->name1 << std::endl;
             while( std::abs(this->name2 - this->name1) > 0.001f )
-        {
-            /*
-             write something that makes the distance between that->name2 and that-><#name1#> get smaller
-             */
-            this->name2 += 1;
-        }
+            {
+                /*
+                write something that makes the distance between that->name2 and that-><#name1#> get smaller
+                */
+                this->name2 += 1;
+            }
             std::cout << "U's name2 updated value: " << this->name2 << std::endl;
             return this->name2 * this->name1;
         }
@@ -111,12 +111,12 @@ struct UpdateValue
             that->name1 = *updatedValue;
             std::cout << "U's name1 updated value: " << that->name1 << std::endl;
             while( std::abs(that->name2 - that->name1) > 0.001f )
-        {
-            /*
-             write something that makes the distance between that->name2 and that-><#name1#> get smaller
-             */
-            that->name2 += 1;
-        }
+            {
+                /*
+                write something that makes the distance between that->name2 and that-><#name1#> get smaller
+                */
+                that->name2 += 1;
+            }
             std::cout << "U's name2 updated value: " << that->name2 << std::endl;
             return that->name2 * that->name1;
         }
