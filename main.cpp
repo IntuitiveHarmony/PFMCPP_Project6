@@ -79,7 +79,7 @@ struct CompareValue //4
 struct U
 {
     float name1{ 0 }, name2{ 0 };
-    int update2(float* updatedValue)      //12
+    float update2(float* updatedValue)      //12
     {
         if(updatedValue != nullptr)
         {
@@ -103,7 +103,7 @@ struct U
 
 struct UpdateValue
 {
-    static int update(U* that, float* updatedValue )        //10
+    static float update(U* that, float* updatedValue )        //10
     {
         if(that != nullptr && updatedValue != nullptr)
         {
